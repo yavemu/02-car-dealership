@@ -65,4 +65,14 @@ export class CarsService {
 
     return this.findById(id);
   }
+
+  delete(id: string) {
+    this.findById(id);
+
+    this.cars = this.cars.map((car) => {
+      if (car.id !== id) {
+        return car;
+      }
+    });
+  }
 }
