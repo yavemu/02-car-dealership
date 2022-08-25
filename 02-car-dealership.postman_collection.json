@@ -1,0 +1,282 @@
+{
+	"info": {
+		"_postman_id": "433582c2-fe56-4e0c-8aee-4e12c8af4f15",
+		"name": "02 car-dealership - Nest - Fernando Herrera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Cars GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cars GET by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/cars/9b408cab-0a41-497f-9789-f4a9d1a8fcf8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"9b408cab-0a41-497f-9789-f4a9d1a8fcf8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cars POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"brand\": \"Renault\",\n    \"year\": 1900\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cars",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cars PATCH",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"brand\": \"AYYYYYY\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/cars/9b408cab-0a41-497f-9789-f4a9d1a8fcf8",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"9b408cab-0a41-497f-9789-f4a9d1a8fcf8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cars DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/cars/0bb0c0d6-f7bc-4bff-b29a-aa2e595ef2a2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"cars",
+								"0bb0c0d6-f7bc-4bff-b29a-aa2e595ef2a2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Brand GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand GET by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/brands/b73dcd17-b132-4cd5-8c98-5005f9d77041",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"b73dcd17-b132-4cd5-8c98-5005f9d77041"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brands POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Renault\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/brands",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Brand PATCH",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"renault\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/brands/aef7998f-c041-4569-827f-27049a4dcf01",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"aef7998f-c041-4569-827f-27049a4dcf01"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cars DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "localhost:3000/brands/aef7998f-c041-4569-827f-27049a4dcf01",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"aef7998f-c041-4569-827f-27049a4dcf01"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "default GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "populatedDB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/seed",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"seed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
